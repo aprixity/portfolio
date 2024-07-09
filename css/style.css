@@ -1,0 +1,92 @@
+:root {
+  --point: #96c9f4;
+  --gray: #9e9e9e;
+  --bold: 'S-CoreDream-7ExtraBold';
+  --regular: 'S-CoreDream-4Regular';
+}
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: var(--regular);
+  font-size: 16px;
+}
+#wrap {
+  width: 100%;
+}
+
+/* header */
+#header {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+}
+.nav strong {
+  width: 20%;
+  font-size: 20px;
+  color: var(--point);
+  font-family: var(--bold);
+}
+.nav > ul {
+  width: 80%;
+  display: flex;
+  justify-content: right;
+}
+.nav > ul > li {
+  text-align: right;
+  padding: 0px 20px;
+}
+
+/* contact */
+#contact {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  padding-top: 150px;
+  background-color: #f1f8ff;
+}
+#contact h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: var(--bold);
+  color: var(--point);
+  padding-bottom: 50px;
+}
+#contact h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#contact span {
+  display: inline-block;
+  padding: 10px;
+  width: 450px;
+  background-color: #96c9f4;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 0.5px;
+}
