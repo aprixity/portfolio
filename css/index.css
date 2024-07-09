@@ -1,0 +1,244 @@
+/* top */
+#top {
+  width: 1200px;
+  height: 750px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+#top ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top img {
+  width: 280px;
+  animation: img 3s infinite;
+}
+#top h1 {
+  width: 550px;
+  font-size: 65px;
+  font-weight: 500;
+  letter-spacing: -6px;
+  margin-left: 20px;
+}
+#top strong {
+  color: var(--point);
+  font-family: var(--bold);
+  font-size: 65px;
+}
+
+@keyframes img {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wheel {
+  width: 130px;
+  color: var(--point);
+  position: absolute;
+  left: 48%;
+  top: 80%;
+}
+.wheel p {
+  font-size: 17px;
+  text-align: center;
+}
+.mouse {
+  content: '';
+  width: 22px;
+  height: 35px;
+  border: 2px solid var(--point);
+  border-radius: 30px;
+  position: relative;
+  left: 43%;
+  top: 10px;
+  animation: wheel 1.5s infinite;
+}
+.mouse::before {
+  content: '';
+  height: 8px;
+  border: 1px solid var(--point);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes wheel {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+/* about me */
+#aboutMe {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+#aboutMe h1 {
+  font-size: 40px;
+  letter-spacing: -4px;
+  text-align: center;
+}
+#aboutMe .aboutMe {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 50px;
+}
+#aboutMe .aboutMe > img {
+  width: 300px;
+  object-fit: cover;
+}
+#aboutMe strong {
+  font-family: var(--bold);
+  color: var(--point);
+  font-size: 40px;
+}
+#aboutMe .about {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+#aboutMe .about h3 {
+  font-size: 20px;
+  font-family: var(--bold);
+  color: var(--point);
+  padding-bottom: 20px;
+}
+#aboutMe .about ul li {
+  font-family: var(--bold);
+  line-height: 1.3;
+}
+#aboutMe .side {
+  padding-left: 80px;
+}
+#aboutMe .license {
+  padding-top: 50px;
+}
+#aboutMe .license h3 {
+  font-size: 20px;
+  font-family: var(--bold);
+  color: var(--point);
+  padding-bottom: 20px;
+}
+#aboutMe .license ul li {
+  line-height: 1.3;
+}
+#aboutMe .license span {
+  font-family: var(--bold);
+}
+#aboutMe .skill {
+  padding-top: 50px;
+}
+#aboutMe .skill h3 {
+  font-size: 20px;
+  font-family: var(--bold);
+  color: var(--point);
+  padding-bottom: 20px;
+}
+#aboutMe .skill ul {
+  display: flex;
+}
+#aboutMe .skill ul li {
+  padding-right: 20px;
+}
+#aboutMe .skill img {
+  width: 50px;
+}
+#aboutMe .text {
+  display: flex;
+}
+
+/* projects */
+#projects {
+  width: 1800px;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#projects h1 {
+  font-size: 65px;
+  text-align: center;
+  font-family: var(--bold);
+  color: var(--point);
+}
+#projects img {
+  width: 840px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px var(--gray);
+}
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+#projects ul li {
+  margin: 40px 30px;
+  position: relative;
+}
+#projects .projectFont {
+  padding-top: 30px;
+}
+#projects .projectFont h3 {
+  font-family: var(--bold);
+  font-size: 25px;
+  padding-bottom: 13px;
+}
+#projects .projectFont span {
+  color: var(--gray);
+}
+
+#projects .background {
+  width: 840px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000ab;
+  border-radius: 20px;
+  display: none;
+}
+#projects .background .Btext {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#projects .background a {
+  width: 150px;
+  padding: 10px 0px;
+  display: inline-block;
+  border: 1px solid #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+#projects .background a:hover {
+  background-color: var(--point);
+  border: 1px solid var(--point);
+  color: #000;
+}
+
+#projects ul li:hover .background {
+  display: block;
+}
