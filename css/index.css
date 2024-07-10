@@ -121,9 +121,17 @@
   color: var(--point);
   padding-bottom: 20px;
 }
+#aboutMe .about ul {
+  padding-bottom: 3px;
+}
 #aboutMe .about ul li {
   font-family: var(--bold);
   line-height: 1.3;
+}
+#aboutMe .about a {
+  color: var(--point);
+  text-decoration: underline;
+  /* font-family: var(--bold); */
 }
 #aboutMe .side {
   padding-left: 80px;
